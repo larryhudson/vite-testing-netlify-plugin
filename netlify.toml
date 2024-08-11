@@ -1,0 +1,7 @@
+[[plugins]]
+package = "netlify-plugin-redirect-with-auth"
+
+  [plugins.inputs]
+  redirects = [
+    { from = "/submit", to = "https://larryhudson-simpleformdatahello.web.val.run" },
+ ]
