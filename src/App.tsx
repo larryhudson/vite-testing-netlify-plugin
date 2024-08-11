@@ -30,7 +30,7 @@ function App() {
         <a href="https://npmjs.com/package/netlify-plugin-redirect-with-auth" target="_blank" rel="noopener noreferrer">
           netlify-plugin-redirect-with-auth on npm
         </a>
-        .
+        . You can also check out the <a href="https://github.com/larryhudson/netlify-plugin-redirect-with-auth">plugin GitHub repo</a> and <a href="https://github.com/larryhudson/vite-testing-netlify-plugin">this demo site repo</a>.
       </p>
       <p>
         The plugin allows us to define redirects inside <code>netlify.toml</code> that use a secret 'Authorization' header set in an environment variable. This allows us to define the redirects in code, but keep our secrets private.
@@ -38,7 +38,7 @@ function App() {
       <div>
         <h2>Submit Form</h2>
         <p>
-          Note: This form submits to /submit. The netlify.toml configuration includes a redirect from /submit to https://larryhudson-simpleformdatahello.web.val.run. That redirect includes an 'Authorization' header which includes my <a href="https://docs.val.town/api/authentication/">Val.town API token</a>.
+          This form submits to /submit. The netlify.toml configuration includes a redirect from /submit to https://larryhudson-simpleformdatahello.web.val.run. That redirect includes an 'Authorization' header which includes my <a href="https://docs.val.town/api/authentication/">Val.town API token</a>.
         </p>
         <form onSubmit={handleSubmit}>
           <input
