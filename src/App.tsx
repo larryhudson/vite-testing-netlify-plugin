@@ -23,6 +23,14 @@ function App() {
   return (
     <>
       <h1>Testing redirect with auth header</h1>
+      <p>
+        This is a demonstration of the netlify-plugin-redirect-with-auth.
+        For more information, visit{' '}
+        <a href="https://npmjs.com/package/netlify-plugin-redirect-with-auth" target="_blank" rel="noopener noreferrer">
+          netlify-plugin-redirect-with-auth on npm
+        </a>
+        .
+      </p>
       <div>
         <h2>Submit Form</h2>
         <form onSubmit={handleSubmit}>
