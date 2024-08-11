@@ -2,21 +2,16 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [name, setName] = useState('')
   const [response, setResponse] = useState('')
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
-    const formData = new FormData(form)
 
     try {
       const res = await fetch('/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded';
-        },
-        body: formData,
+        body: new FormData(form),
       })
       const data = await res.json()
       setResponse(JSON.stringify(data, null, 2))
@@ -34,8 +29,7 @@ function App() {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            name="name"
             placeholder="Enter your name"
             required
           />
