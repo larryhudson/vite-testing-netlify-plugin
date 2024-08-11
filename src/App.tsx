@@ -33,13 +33,13 @@ function App() {
         .
       </p>
       <p>
-        Note: This site contains a redirect from /submit to https://larryhudson-simpleformdatahello.web.val.run
-      </p>
-      <p>
         The plugin allows us to define redirects inside <code>netlify.toml</code> that use a secret 'Authorization' header set in an environment variable. This allows us to define the redirects in code, but keep our secrets private.
       </p>
       <div>
         <h2>Submit Form</h2>
+        <p>
+          Note: This form submits to /submit. The netlify.toml configuration includes a redirect from /submit to https://larryhudson-simpleformdatahello.web.val.run. That redirect includes an 'Authorization' header which includes my <a href="https://docs.val.town/api/authentication/">Val.town API token</a>.
+        </p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
