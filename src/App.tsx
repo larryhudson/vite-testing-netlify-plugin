@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Testing redirect with auth header</h1>
+      <h1>netlify-plugin-redirect-with-auth</h1>
       <p>
         This is a demonstration of the netlify-plugin-redirect-with-auth.
         For more information, visit{' '}
