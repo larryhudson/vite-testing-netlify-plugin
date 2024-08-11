@@ -32,6 +32,9 @@ function App() {
         </a>
         .
       </p>
+      <p>
+        Note: This site contains a redirect from /submit to https://larryhudson-simpleformdatahello.web.val.run
+      </p>
       <div>
         <h2>Submit Form</h2>
         <form onSubmit={handleSubmit}>
