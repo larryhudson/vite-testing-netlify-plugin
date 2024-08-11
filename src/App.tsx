@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './App.css'
 
 function App() {
   const [response, setResponse] = useState('')
@@ -21,7 +22,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="container">
       <h1>Testing redirect with auth header</h1>
       <p>
         This is a demonstration of the netlify-plugin-redirect-with-auth.
@@ -49,7 +50,7 @@ function App() {
           </div>
         )}
       </div>
-    </>
+    </div>
   )
 }
 
